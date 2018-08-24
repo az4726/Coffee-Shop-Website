@@ -1,0 +1,178 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony's Java</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Coustard|Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-brown">
+        <span class="branding w3-bar-item w3-mobile">Tony's Java</span>
+        <span class="w3-right w3-mobile">
+      <a class="w3-bar-item w3-button w3-mobile" href="#">Home</a>
+      <a class="w3-bar-item w3-button w3-mobile" href="#about">About</a>
+      <a class="w3-bar-item w3-button w3-mobile" href="#coffee">Our Coffee</a>
+      <a class="w3-bar-item w3-button w3-mobile" href="#contact">Contact</a>
+    </div>
+    </div>
+
+    <!-- Showcase -->
+    <section class="showcase">
+      <div class="w3-container w3-center">
+        <h1 class="w3-text-shadow w3-animate-opacity">Tony's Java</h1>
+        <hr class="w3-animate-opacity">
+        <p class="w3-animate-opacity">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur itaque libero esse quam alias odio provident.</p>
+        <button class="w3-button w3-brown w3-large w3-animate-opacity" onclick="openModal()">Start Here</button>
+      </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section class="section w3-brown w3-hover-opacity">
+      <div class="w3-container w3-center">
+        <i class="material-icons md-36">home</i>
+        <h2>A relaxing environment</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem optio excepturi earum, quo reprehenderit, commodi modi magnam magni.</p>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section w3-grey w3-hover-opacity">
+      <div class="w3-container w3-center">
+        <i class="material-icons md-36">build</i>
+        <h2>A variety of ingredients</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem optio excepturi earum, quo reprehenderit, commodi modi magnam magni.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="w3-container">
+        <div class="w3-row-padding">
+          <div class="w3-col m5">
+            <img src="./img/beans.jpg" alt="coffee beans">
+          </div>
+          <div class="w3-col m7">
+            <button onclick="accordionFunction('whatWeDo')" class="w3-btn w3-block w3-brown w3-center-align accordion">What We Do</button>
+            <div id="whatWeDo" class="w3-container w3-show">
+              <h3>The best coffee in town</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere qui dolore cumque sapiente nisi facilis explicabo reprehenderit praesentium, vero, distinctio repellat ipsa quasi. Ab expedita nihil suscipit repudiandae alias, repellat saepe rerum optio consectetur quae porro rem delectus, aliquid pariatur.</p>
+            </div>
+            <button onclick="accordionFunction('whoWeAre')" class="w3-btn w3-block w3-brown w3-center-align accordion">Who We Are</button>
+            <div id="whoWeAre" class="w3-container w3-hide">
+              <h3>We're a bunch of friendly dudes with a passion for coffee</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio odit, officiis nulla nisi eveniet? Hic repellat doloremque delectus enim, mollitia fugiat harum repellendus iusto laborum cum nisi placeat, molestias praesentium sunt repudiandae voluptas eaque corporis animi. Atque repellendus fuga voluptas deleniti neque dignissimos? Mollitia tempora necessitatibus molestias ex nisi distinctio?</p>
+            </div>
+            <button onclick="accordionFunction('Demo1')" class="w3-btn w3-block w3-brown w3-center-align accordion">Where Can You Find Us</button>
+            <div id="Demo1" class="w3-container w3-hide">
+              <h3>We have several branches located around Birmingham</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque reprehenderit excepturi, officiis quos dolor autem, ullam suscipit iusto laborum illum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coffee Section Heading-->
+    <section id="coffee" class="section w3-brown">
+      <div class="w3-container w3-center">
+        <h2 class="w3-text-shadow">Our Coffee</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem veritatis quibusdam non!</p>
+      </div>
+    </section>
+
+    <!-- Coffee Section Features-->
+    <section class="section w3-grey">
+      <div class="w3-container w3-center">
+        <div class="w3-row">
+          <div class="w3-col m3">
+            <i class="material-icons md-24">blur_on</i>
+              <h3>The best coffee beans from around the world.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="w3-col m3">
+            <i class="material-icons md-24">local_dining</i>
+              <h3>Delicious food available to complement your beverage.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="w3-col m3">
+            <i class="material-icons md-24">place</i>
+              <h3>Located at convenient locations around the city.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="w3-col m3">
+            <i class="material-icons md-24">sentiment_very_satisfied</i>
+              <h3>We only hire the best to give you a great experience.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Heading-->
+    <section id="contact" class="section w3-black">
+      <div class="w3-container w3-center">
+        <h2 class="w3-text-shadow">Get in touch</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem veritatis quibusdam non!</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section w3-white">
+      <div class="w3-container">
+        <div class="w3-card-2">
+          <div class="w3-container w3-brown">
+            <h2>Contact Us</h2>
+          </div>
+          <form class="w3-container w3-padding-large">
+            <label class="w3-text-brown"><b>Name</b></label>
+            <input class="w3-input w3-border w3-round" type="text">
+            <br>
+            <label class="w3-text-brown"><b>Email</b></label>
+            <input class="w3-input w3-border w3-round" type="text">
+            <br>
+            <label class="w3-text-brown"><b>Message</b></label>
+            <textarea class="w3-input w3-border w3-round" style="resize:none"></textarea>
+            <br>
+            <button type="submit" class="w3-btn w3-brown">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer w3-brown">
+      <p>Tony's Java - A website by Azhar Zaman</p>
+    </footer>
+
+    <!-- Modal/Popup -->
+    <div id="modal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-round">
+        <header class="w3-container w3-brown">
+          <span onclick="document.getElementById('modal').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+          <h2>Create Order</h2>
+        </header>
+        <form class="w3-container w3-padding-large">
+          <label class="w3-text-brown"><b>Name</b></label>
+          <input class="w3-input w3-border w3-round" type="text">
+          <br>
+          <label class="w3-text-brown"><b>Beverage</b></label>
+          <input class="w3-input w3-border w3-round" type="text">
+          <br>
+          <button class="w3-block w3-section-padding w3-brown">Submit Order</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+  </body>
+
+</html>
